@@ -243,7 +243,7 @@ using System.Xml;
 //}
 //If all assertions pass, then your solution will be accepted.
 
- 
+
 
 //Example 1:
 
@@ -257,7 +257,7 @@ using System.Xml;
 //Output: 7, nums = [0, 0, 1, 1, 2, 3, 3, _, _]
 //Explanation: Your function should return k = 7, with the first seven elements of nums being 0, 0, 1, 1, 2, 3 and 3 respectively.
 //It does not matter what you leave beyond the returned k (hence they are underscores).
- 
+
 
 //Constraints:
 
@@ -298,3 +298,59 @@ using System.Xml;
 //        }
 //    }
 //}
+//Given an array nums of size n, return the majority element.
+
+//The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+ 
+
+//Example 1:
+
+//Input: nums = [3, 2, 3]
+//Output: 3
+//Example 2:
+
+//Input: nums = [2, 2, 1, 1, 1, 2, 2]
+//Output: 2
+
+
+
+//Constraints:
+
+//n == nums.length
+//1 <= n <= 5 * 104
+//- 109 <= nums[i] <= 109
+
+
+
+//Follow - up: Could you solve the problem in linear time and in O(1) space?
+//namespace majority
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int[] nums = [2, 2, 1, 1, 1, 2, 2,1,1,1,1];
+//            solutions(nums);
+//        }
+
+//        static int solutions(int[] nums)
+//        {
+//            int value = 0;
+//            int count = 0;
+//            for (int i = 0; i < nums.Length; i++)
+//            {
+//                int countInside = 0;
+//                for (int j = 0; j < nums.Length; j++)
+//                {
+//                    if (nums[i] == nums[j]) countInside++;
+//                }
+//                if (countInside > count) count = countInside; value = nums[i];
+//            }
+
+//            return value;
+//        }
+//    }
+//}
+
+
